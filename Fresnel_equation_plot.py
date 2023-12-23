@@ -116,7 +116,7 @@ graph_1.set_title(r'''Reflection ($r=\frac{E_{0_R}}{E_{0_I}}$) and
 Transmission ($t=\frac{E_{0_T}}{E_{0_I}}$) Coefficients as a function of Angle of Incidence ($\theta_i$)''', pad=20)
 graph_1.axis([0, 90, -0.4, 1.0])
 graph_1.tick_params(top=True, right=True, direction="in", length=7, width=0.9)
-graph_1.legend(loc="upper right", bbox_to_anchor=(0.55, 0.8))
+graph_1.legend(loc="upper right", bbox_to_anchor=(0.6, 0.8))
 
 
 '''
@@ -162,3 +162,5 @@ plt.subplots_adjust(left=0.1,
                     hspace=0.1)
 
 plt.show()
+# Save plot to png file.
+figure.savefig("fresnel_equation_plot_python.png", bbox_inches='tight')
