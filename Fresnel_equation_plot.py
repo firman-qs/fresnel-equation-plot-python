@@ -135,7 +135,7 @@ graph_2.axis([0, 90, -0.05, 1.05])
 graph_2.tick_params(top=True, right=True, direction="in", length=7, width=0.9)
 graph_2.legend(loc="upper right", bbox_to_anchor=(0.42, 0.9))
 
-# Properti Umum Grafik 1 & 2
+# General Properties of Graph 1 & 2
 for i in range(2):
     locals()[f"graph_{i+1}"].grid()
     locals()[f"graph_{i+1}"].annotate(r"Brewster's Angle $\theta_B$",
